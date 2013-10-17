@@ -7,7 +7,7 @@
 %filter_setup
 
 Name:           vmware-view-client
-Version:        2.0.0
+Version:        2.1.0
 Release:        1%{?dist}
 Summary:        Deliver rich, personalized virtual desktops with VMware View 5
 
