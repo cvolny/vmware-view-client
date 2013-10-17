@@ -10,7 +10,7 @@ Build and Installation Steps:
         $ mkdir -p $HOME/rpmbuild/{SOURCES,BUILD}
         $ cd $HOME/rpmbuild/SOURCES
 
-2. Download vmware.orig from Ubuntu repo:
+2. Download vmware.orig from Ubuntu repo (http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/):
 
         $ wget http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/vmware-view-client_2.1.0.orig.tar.gz
 
