@@ -19,9 +19,9 @@ Build and Installation Steps:
 
  4. Build rpm binary with rpmbuild
 
-	# on 32bit
+	\# on 32bit
 	$ rpmbuild -ba $HOME/rpmbuild/SOURCES/vmware-view-client.spec
-	# on 64bit
+	\# on 64bit
 	$ linux32 rpmbuild -ba $HOME/rpmbuild/SOURCES/vmware-view-client.spec
 
  5. If build succeeds, you should have an binary RPM to install, install with yum.
