@@ -10,25 +10,34 @@ Build and Installation Steps:
         $ mkdir -p $HOME/rpmbuild/{SOURCES,BUILD}
         $ cd $HOME/rpmbuild/SOURCES
 
-2. Download vmware.orig from Ubuntu repo (http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/):
+2. Clone this repo into $HOME/rpmbuild/SOURCES/vmware-view-client
+
+        $ git clone https://github.com/cvolny/vmware-view-client.git vmware-view-client
+
+3. Download vmware.orig.tar.gz from Ubuntu repo[1]:
 
         $ wget http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/vmware-view-client_2.1.0.orig.tar.gz
 
-3. Clone this repo into $HOME/rpmbuild/SOURCES
+4. Move relevant files into SOURCES
 
-        $ git clone <repourl> .
+	$ cp -t . vmware-view-client/vmware-view{-client.{desktop,png,spec},.sh}
 
-4. Build rpm binary with rpmbuild
+5. Build rpm binary with rpmbuild
 
-        \# on 32bit
-        $ rpmbuild -ba $HOME/rpmbuild/SOURCES/vmware-view-client.spec
-        \# on 64bit
-        $ linux32 rpmbuild -ba $HOME/rpmbuild/SOURCES/vmware-view-client.spec
+        # on 32bit
+        $ rpmbuild -ba vmware-view-client.spec
+        # on 64bit
+        $ linux32 rpmbuild -ba vmware-view-client.spec
 
-5. If build succeeds, you should have an binary RPM to install, install with yum.
+6. If build succeeds, you should have an binary RPM to install, install with yum.
 
         $ sudo yum install $HOME/rpmbuild/RPMS/i686/vmware-view-client-2.1.0-1.fc19.i686.rpm
 
 
 
-Rem: Verified by cvolny on Fedora 19 x86_64 on updated system on 2013-10-16
+Remarks:
+
+    1. Canonical Repo: http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/).
+    2. Instructions verified by cvolny on Fedora 19 x86_64 on updated system on 2013-10-16.
+
+ 
