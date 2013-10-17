@@ -37,7 +37,7 @@ Build and Installation Steps:
 
 Remarks:
 
-1. Canonical Repo: http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/).
+1. Canonical Repo: http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/
 2. Instructions verified by cvolny on Fedora 19 x86_64 on updated system on 2013-10-16.
 
  
